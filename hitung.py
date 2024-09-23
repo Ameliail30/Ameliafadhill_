@@ -15,6 +15,8 @@ if sx == 'C':  # Input in Celsius
         y = (X * 9/5) + 32  # Celsius to Fahrenheit
     elif sy == 'K':
         y = X + 273.15  # Celsius to Kelvin
+      elif sy == 'R':
+        y = (X + 273.15) * 9/5 
     else:
         st.write("Satuan tujuan tidak dikenal")
 
@@ -25,6 +27,8 @@ elif sx == 'F':  # Input in Fahrenheit
         y = X  # Fahrenheit to Fahrenheit (no change)
     elif sy == 'K':
         y = (X - 32) * 5/9 + 273.15  # Fahrenheit to Kelvin
+    elif sy == 'R':
+        y = X + 459.67  # Fahrenheit to Rankine
     else:
         st.write("Satuan tujuan tidak dikenal")
 
@@ -35,9 +39,22 @@ elif sx == 'K':  # Input in Kelvin
         y = (X - 273.15) * 9/5 + 32  # Kelvin to Fahrenheit
     elif sy == 'K':
         y = X  # Kelvin to Kelvin (no change)
+     elif sy == 'R':
+        y = X * 9/5  # Kelvin to Rankine
     else:
         st.write("Satuan tujuan tidak dikenal")
-
+        
+elif sx == 'R':  # Input in Rankine
+    if sy == 'C':
+        y = (X - 491.67) * 5/9  # Rankine to Celsius
+    elif sy == 'F':
+        y = X - 459.67  # Rankine to Fahrenheit
+    elif sy == 'K':
+        y = X * 5/9  # Rankine to Kelvin
+    elif sy == 'R':
+        y = X  # Rankine to Rankine (no change)
+    else:
+        st.write
 else:
     st.write("Satuan input tidak dikenal")
 

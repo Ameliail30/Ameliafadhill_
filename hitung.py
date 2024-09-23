@@ -1,6 +1,7 @@
 import streamlit as st
 
 # Input number and units
+st.header("Kalkulator suhu")
 X = st.number_input("Masukkan angka")
 sx = st.text_input("Satuan", "C")
 st.write(f"Anda memasukkan: {X} {sx}")

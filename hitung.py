@@ -39,7 +39,7 @@ elif sx == 'K':  # Input in Kelvin
         y = (X - 273.15) * 9/5 + 32  # Kelvin to Fahrenheit
     elif sy == 'K':
         y = X  # Kelvin to Kelvin (no change)
-     elif sy == 'R':
+    elif sy == 'R':
         y = X * 9/5  # Kelvin to Rankine
     else:
         st.write("Satuan tujuan tidak dikenal")

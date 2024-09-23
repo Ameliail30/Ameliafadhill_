@@ -15,7 +15,7 @@ if sx == 'C':  # Input in Celsius
         y = (X * 9/5) + 32  # Celsius to Fahrenheit
     elif sy == 'K':
         y = X + 273.15  # Celsius to Kelvin
-      elif sy == 'R':
+    elif sy == 'R':
         y = (X + 273.15) * 9/5 
     else:
         st.write("Satuan tujuan tidak dikenal")

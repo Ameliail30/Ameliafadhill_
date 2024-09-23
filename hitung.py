@@ -3,9 +3,9 @@ import streamlit as st
 # Input number and units
 st.header("Kalkulator suhu")
 X = st.number_input("Masukkan angka")
-sx = st.selectbox("Dikonversi ke", ("C", "F", "K"), key='sx')
+sx = st.selectbox("Dikonversi ke", ("C", "F", "R", "K"), key='sx')
 st.write(f"Anda memasukkan: {X} {sx}")
-sy = st.selectbox("Dikonversi ke", ("C", "F", "K"), key='sy')
+sy = st.selectbox("Dikonversi ke", ("C", "F", "R", "K"), key='sy')
 y = 0
 # Conversion logic
 if sx == 'C':  # Input in Celsius

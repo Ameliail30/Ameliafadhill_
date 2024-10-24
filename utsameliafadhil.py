@@ -55,15 +55,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Header
 st.markdown("<h1>UTS Fisika Komputasi Awan</h1>", unsafe_allow_html=True)
 st.markdown("<h3>Amelia Fadhil Nurlaila</h3>", unsafe_allow_html=True)
 st.markdown("<h4>210322607210</h4>", unsafe_allow_html=True)
 
-# Circle definition
 circle = Circle((0, 0), 1, color='#6a0572', fill=False, linewidth=3, linestyle='-', alpha=0.3)
-
-# Initialize data
 x = []
 y = []
 color = []
@@ -73,7 +69,6 @@ y.append(0)
 color.append((0.8, 0.4, 0.8))
 size.append(500)
 
-# Button interaction
 if st.button("Data ✨"):
     for i in range(111):
         x0 = 2 * (random.random() - 0.5)
@@ -86,21 +81,19 @@ if st.button("Data ✨"):
         color.append((random.random(), random.random(), random.random()))
         size.append(3713 * random.random())
 
-# Create figure and plot
+
 fig, ax = plt.subplots(figsize=(10, 10))
 ax.add_patch(circle)
 
-# Plot lines from center
 for i in range(1, len(x)):
     ax.plot([0, x[i]], [0, y[i]], color='purple', linestyle='--', alpha=0.2)
 
-# Scatter plot
 scatter = ax.scatter(x, y, c=color, s=size, alpha=0.8, edgecolor='#5a5a5a')
 
 # Set labels and title
 ax.set_ylabel("Y-axis", fontsize=16, color='#8e44ad')
 ax.set_xlabel("X-axis", fontsize=16, color='#8e44ad')
-ax.set_title('Random Data within a Circle 🌸', fontsize=22, color='#d97d54')
+ax.set_title('Data acak yang berubah ketika tombol ditekan 🌸', fontsize=22, color='#d97d54')
 
 # Customize ticks and grid
 ax.tick_params(axis='y', labelsize=12, colors='#6a0572')

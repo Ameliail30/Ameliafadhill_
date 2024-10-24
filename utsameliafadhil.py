@@ -93,7 +93,7 @@ scatter = ax.scatter(x, y, c=color, s=size, alpha=0.8, edgecolor='#5a5a5a')
 # Set labels and title
 ax.set_ylabel("Y-axis", fontsize=16, color='#8e44ad')
 ax.set_xlabel("X-axis", fontsize=16, color='#8e44ad')
-ax.set_title('Data acak yang berubah ketika tombol ditekan 🌸', fontsize=15, color='#d97d54')
+ax.set_title('Data acak yang berubah ketika tombol ditekan', fontsize=15, color='#d97d54')
 
 # Customize ticks and grid
 ax.tick_params(axis='y', labelsize=12, colors='#6a0572')
